@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <form id="cadastroForm" action="#">
+                <div class="form-header">
+                    <h1>Faça o seu Cadastro</h1>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="nome">Primeiro Nome</label>
+                        <input id="nome" type="text" name="nome" placeholder="Digite seu primeiro nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input id="sobrenome" type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="mensagem">Deixe sua mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="6" placeholder="Digite sua mensagem"></textarea>
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button type="submit">Continuar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: beige;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-header h1 {
+            font-size: 25px;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-bottom: 20px;
+        }
+
+        .input-box label {
+            font-size: 18px;
+            color: black;
+        }
+
+        .input-box input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-top: 5px;
+            border: 2px solid black;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .continue-button button {
+            width: 100%;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 19px;
+            font-size: 19px;
+            cursor: pointer;
+        }
+
+        .continue-button button a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+
+    <script>
+        document.getElementById('cadastroForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            var nome = document.getElementById('nome').value;
+            var sobrenome = document.getElementById('sobrenome').value;
+            var email = document.getElementById('email').value;
+            var mensagem = document.getElementById('mensagem').value;
+
+            if (!nome || !sobrenome || !email || !mensagem) {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+            } else {
+                alert('Cadastro realizado com sucesso!');
+               
+            }
+        });
+    </script>
+</body>
+
+</html>
 

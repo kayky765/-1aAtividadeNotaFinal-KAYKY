@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil de Kayky</title>
+</head>
+<body>
+    <div class="card">
+        <div class="profile-img">
+            <img src="https://avatars.githubusercontent.com/u/181851097?s=96&v=4" alt="Foto de Perfil">
+        </div>
+        <h2 class="name">Kayky (202403318041) </h2>
+        <p class="role">Estudante de Ciência da Computação e tenho 18 anos,tenho conhecimento intermediário das linguagens abaixo.Também tenho interesse em engenharia de software e cybersecurity.</p>
+
+        <div class="linguagens">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>C</span>
+            <span>Python</span>
+        </div>
+
+        <div class="mais-informações">
+            <a href="https://www.linkedin.com/in/kayky-santos-842a992a9" target="_blank">LinkedIn</a>
+            <a href="https://github.com/kayky765" target="_blank">GitHub</a>
+        </div>
+    </div>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -56,27 +78,5 @@
             color: black;
         }
     </style>
-</head>
-<body>
-    <div class="card">
-        <div class="profile-img">
-            <img src="https://avatars.githubusercontent.com/u/181851097?s=96&v=4" alt="Foto de Perfil">
-        </div>
-        <h2 class="name">Kayky (202403318041) </h2>
-        <p class="role">Estudante de Ciência da Computação e tenho 18 anos,tenho conhecimento intermediário das linguagens abaixo.Também tenho interesse em engenharia de software e cybersecurity.</p>
-
-        <div class="linguagens">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>C</span>
-            <span>Python</span>
-        </div>
-
-        <div class="mais-informações">
-            <a href="https://www.linkedin.com/in/kayky-santos-842a992a9" target="_blank">LinkedIn</a>
-            <a href="https://github.com/kayky765" target="_blank">GitHub</a>
-        </div>
-    </div>
 </body>
 </html>
